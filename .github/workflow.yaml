@@ -1,0 +1,17 @@
+---
+name: Renovate Bot
+
+on  :
+  workflow_dispatch:
+
+jobs:
+  renovate-bot:
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Renovate Bot (${{ matrix.org-configs }})
+        uses: renovatebot/github-action@40.2.0
+        with:
+          configurationFile: tmp.json
+          token: x-access-token:${{ secrets.USER_GIT_TOKEN }}
+          renovate-version: 37.426.0-full
