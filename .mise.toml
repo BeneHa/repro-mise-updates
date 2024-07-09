@@ -1,0 +1,6 @@
+[tools]
+pre-commit = "prefix:2"
+terraform-docs = "0.18.0"
+azure-cli = "prefix:2.80"
+tflint = "prefix:0"
+terraform = "prefix:1.8"
