@@ -1,17 +1,13 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 30101
 
 ## Current behavior
 
-Explain the current behavior here.
+The mise manager updates dependencies to the latest patch version ignoring if they were defined at that level, so e.g. terraform "prefix:1.8" is updated to terraform 1.9.1.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+The updates should keep the defined granularity, updating e.g. from terraform "prefix:1.8" to "prefix:1.9".
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/30101
