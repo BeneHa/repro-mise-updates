@@ -1,5 +1,5 @@
 [tools]
-pre-commit = "prefix:2"
+pre-commit = "2.21.0"
 terraform-docs = "0.18.0"
 azure-cli = "prefix:2.80"
 tflint = "prefix:0"
